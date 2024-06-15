@@ -1,0 +1,29 @@
+{
+    "name": "volodymyr-klymniuk/group-bwt",
+    "description": "Test assignment",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "VolodymyrKlymniuk\\GroupBwt\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": 'tests/'
+        }
+    },
+    "authors": [
+        {
+            "name": "Volodymyr Klymniuk",
+            "email": "vova.klymniuk@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit": "10.5.x-dev"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit -c phpunit.xml tests/"
+    }
+}

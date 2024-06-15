@@ -1,0 +1,17 @@
+services:
+  # Runtime application GroupBWT
+  app:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    env_file:
+      - .env
+    command: composer --dev test
+#    command:  ./vendor/bin/phpunit -c phpunit.xml tests/
+    volumes:
+      - ./:/app
+    networks:
+      - backend
+
+networks:
+    backend:
