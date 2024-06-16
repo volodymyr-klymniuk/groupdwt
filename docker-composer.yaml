@@ -7,7 +7,6 @@ services:
     env_file:
       - .env
     command: composer --dev test
-#    command:  ./vendor/bin/phpunit -c phpunit.xml tests/
     volumes:
       - ./:/app
     networks:
